@@ -12,7 +12,7 @@ class BankCardTest {
     void shouldSubmitRequest() {
         open("http://localhost:9999");
         SelenideElement form = $("[id=root]");
-        form.$("input[name='name']").setValue("Regina Faritova");
+        form.$("input[name='name']").setValue("Регина Фаритова");
         form.$("input[name='phone']").setValue("+79117790793");
         form.$("span[class='checkbox__box']").click();
         form.$("button[type='button']").click();
